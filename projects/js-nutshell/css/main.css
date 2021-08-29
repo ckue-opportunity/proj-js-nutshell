@@ -1,0 +1,30 @@
+body {
+    font-size: 11px;
+}
+
+h1 {
+    color: red
+}
+
+.code-ckue, .output-ckue {
+    padding-right: 0px;
+    padding-left: 0px;
+    max-width: 100%;
+}
+
+.result-text {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 40px;
+}
+
+.p-spacer {
+    height: 1px;
+}
+
+#important-img {
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+

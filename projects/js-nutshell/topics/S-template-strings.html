@@ -1,0 +1,86 @@
+<?php include '../config.php'; ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--link rel="stylesheet" href="../css/main.css"-->
+  <link href="../libs/prism/prism.css" rel="stylesheet" />
+
+  <script src="../libs/prism/prism.js"></script>
+  <script src="../js/samples.js"></script>
+</head>
+
+<body>
+
+    <h1>Template Strings</h1>
+
+    <p>
+      Template strings are strings wrapped with backticks (`) instead of single or double quotes, allowing embedded expressions called substitutions. 
+    </p>
+
+    <!-- EXAMPLE 1 ----------------------------------------------------------->
+    <h3>Example 1: Variable Substitution</h3>
+
+    <pre class="language-css">
+      <code class="language-css">
+&lt;script>
+  let firstName = "Petra";
+  let lastName = "Grimes";
+
+  /*  introduction string, containing single AND
+      double quotes, as well as two placeholders */
+  let intro = `Let's introduce ${firstName} ${lastName} "officially"!`;
+
+  console.log(intro);
+&lt;/script>
+      </code>
+    </pre>
+
+  <div>
+    <button onclick="S_templateStrings1();">Run</button>
+    <button onclick="clearResultText(1);">Clear</button>
+    <p id="result-text-1" class="result-text">&nbsp;</p>
+  </div>
+
+  <!-- EXAMPLE 2 ----------------------------------------------------------->
+  <h3>Example 2: Expression Substitution</h3>
+
+  <pre class="language-css">
+    <code class="language-css">
+&lt;script>
+  let a = 4;
+  let b = 17;
+
+  /*  statement string with math expression placeholders that
+      will be replaced by their respective results */
+  let statement = `Twenty-one is ${a + b} and not ${2 * a + b}.`;
+
+  console.log(statement);
+&lt;/script>
+    </code>
+  </pre>
+
+<div>
+  <button onclick="S_templateStrings2();">Run</button>
+  <button onclick="clearResultText(2);">Clear</button>
+  <p id="result-text-2" class="result-text">&nbsp;</p>
+</div>
+
+  <!-- RELATED MATERIAL ---------------------------------------------------->
+  <h3>Related Topics</h3>
+  <p>Quotes Inside Strings, Multiline Strings, HTML Templates</p>
+
+  <h3>More Examples</h3>
+  <a href="#">Template Strings - Mariano</a><br>
+  <a href="#">Template Strings - Caro</a><br>
+
+  <h3>More Info</h3>
+  <a href="https://www.w3schools.com/js/js_string_templates.asp" target="_blank">String Templates - w3schools</a><br>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank">Template Strings - MDN Web Docs</a>
+
+</body>
+
+</html>
