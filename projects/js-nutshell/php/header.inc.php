@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="../libs/prism/prism.css"/>
   <link rel="stylesheet" href="../css/main.css">
 
-  <script src="../libs/prism/prism.js"></script>
   <script src="../js/samples.js"></script>
 </head>
 
